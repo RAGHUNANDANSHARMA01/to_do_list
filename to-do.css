@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'poppins',sans-serif;
+    box-sizing: border-box;
+}
+h1{
+    align-items: center;
+    justify-content: center;
+    color: red;
+
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(https://images.ctfassets.net/zkw0qlnf0vqv/psycom_page_fid42479_asset_42450/e5feb00e235e4d9f7b72b1fca0fc6415/heart-shaped-bomb-CROPPED-love-bomb-photo);
+    background-size: contain;
+    padding: 10px;
+}
+
+.todo-app{
+    color:gold;
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+.todo-app img{
+    width:10%;
+    /* height: 30%; */
+    text-align: center;
+    justify-content: center;
+    margin-top: 200px;
+    margin-bottom: 200px;
+
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:  #edeef0;
+    border-radius: 50px;
+    /* padding-right: 30px; */
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 14px;
+    text-align: center;
+    justify-content: center;
+}
+button{
+    border:none;
+    outline: none;
+    padding: 16px 50px;
+    background: #ff5945;
+    color:#fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+
+}
+ul li{
+    /* justify-content: center;
+    align-items: center; */
+    list-style: none;
+    font-size: 18px;
+    padding: 12px 8px 12px 15px;
+    user-select:none;
+    cursor: pointer;
+    position: relative;
+    /* justify-content: end;
+} */
+}
+ul li::before{
+    content: '  ';
+    position:absolute;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color:orange;
+    background-size: cover;
+    background-position: center;
+    top:10px;
+    left:0px;
+    right: 10px;
+    bottom: 30px;
+    
+}
+ul li.checked{
+    color:#555;
+    text-decoration: line-through;
+
+}
+ul li.checked::before{
+    background-image: url(images.png);
+}
+ul li span{
+    position:absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+}
+ul li span:hover{
+    background: #edeef0;
+
+}
+
+
+
+
+
+
+
+
+
+
